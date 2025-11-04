@@ -7,6 +7,7 @@ variable "aws_region" {
 variable "environment" {
   description = "Environment name"
   type        = string
+  default     = "dev"
 }
 
 variable "vpc_cidr" {
@@ -40,10 +41,11 @@ variable "max_size" {
 }
 variable "ami_id" {
   description = "AMI id for AWS instance"
-  type = string 
+  type        = string
+  default     = "ami-049442a6cf8319180"
 }
 variable "desired_capacity" {
   description = "Desider number of instances"
-  type = number
-  default = 1
+  type        = number
+  default     = 1
 }
