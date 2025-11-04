@@ -28,24 +28,8 @@ variable "instance_type" {
   default     = "t2.micro"
 }
 
-variable "min_size" {
-  description = "Minimum number of instances"
-  type        = number
-  default     = 1
-}
-
-variable "max_size" {
-  description = "Maximum number of instances"
-  type        = number
-  default     = 2
-}
 variable "ami_id" {
   description = "AMI id for AWS instance"
   type        = string
   default     = "ami-049442a6cf8319180"
-}
-variable "desired_capacity" {
-  description = "Desider number of instances"
-  type        = number
-  default     = 1
 }

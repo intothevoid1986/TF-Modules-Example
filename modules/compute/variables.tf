@@ -15,18 +15,3 @@ variable "security_group_id" {
 variable "subnet_ids" {
   type = list(string)
 }
-variable "target_group_arn" {
-  type = string
-}
-variable "min_size" {
-  default = 1
-  type = number
-}
-variable "max_size" {
-  default = 1
-  type = number
-}
-variable "desired_capacity" {
-  default = 1
-  type = number
-}
